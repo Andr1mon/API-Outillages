@@ -1,15 +1,15 @@
 package tp.ensim.TPINFO2.model;
 
 public class Coordinate {
-    public double altitude;
+    public double latitude;
     public double longitude;
 
-    public double getAltitude() {
-        return altitude;
+    public double getLatitude() {
+        return latitude;
     }
 
-    public void setAltitude(double altitude) {
-        this.altitude = altitude;
+    public void setLaltitude(double latitude) {
+        this.latitude = latitude;
     }
 
     public double getLongitude() {

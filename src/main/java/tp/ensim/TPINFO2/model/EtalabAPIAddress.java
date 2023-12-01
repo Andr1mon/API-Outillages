@@ -3,7 +3,6 @@ package tp.ensim.TPINFO2.model;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class EtalabAPIAddress {
 
     public String type;

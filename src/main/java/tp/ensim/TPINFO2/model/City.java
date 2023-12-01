@@ -6,8 +6,8 @@ public class City {
     public String name;
     public double latitude;
     public double longitude;
-    public double country;
-    public double city;
+    public String country;
+    public String city;
 
     public String getName() {
         return name;
@@ -33,19 +33,19 @@ public class City {
         this.longitude = longitude;
     }
 
-    public double getCountry() {
+    public String getCountry() {
         return country;
     }
 
-    public void setCountry(double country) {
+    public void setCountry(String country) {
         this.country = country;
     }
 
-    public double getCity() {
+    public String getCity() {
         return city;
     }
 
-    public void setCity(double city) {
+    public void setCity(String city) {
         this.city = city;
     }
 }
