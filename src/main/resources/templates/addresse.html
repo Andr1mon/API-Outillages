@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='fr' xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Adresse</title>
 </head>
 <body>
+    <nav th:replace="fragments/navbar :: navbarFragment"></nav>
     <form action="/meteo" method="post">
       <div>
-        <label for="address">Please input your address :</label>
+        <label for="address">Please input your address:</label>
         <input name="address" id="address">
       </div>
       <div>
-        <button>Get the weather at the given address !</button>
+        <button>Get the weather at the given address!</button>
       </div>
     </form >
 </body>

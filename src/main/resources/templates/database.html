@@ -2,9 +2,10 @@
 <html lang='fr' xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Météo</title>
+    <title>H2-Console</title>
 </head>
 <body>
     <nav th:replace="fragments/navbar :: navbarFragment"></nav>
+    <iframe style="border: none" th:src="@{/h2-console}" width="800" height="600"></iframe>
 </body>
 </html>

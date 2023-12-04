@@ -1,14 +1,14 @@
-### Lien vers projet GitHub
+### Lien vers le projet GitHub: https://github.com/Andr1mon/TP-INFO2
 
 # TP 3
 
-## Etape 5
+## Étape 5
 
-**Spring Web :**
+**Spring Web**
   > * Build web, including RESTful, applications using Spring MVC. Uses Apache Tomcat as the  default embedded container. 
   > * La dépendance Spring Web est utilisée pour le développement d'applications web avec le framework Spring. Elle fournit des fonctionnalités essentielles pour la création de services web RESTful et la gestion des requêtes HTTP. Cette dépendance inclut des composants tels que des contrôleurs (Controllers) qui permettent de gérer les requêtes HTTP, des annotations pour définir des points d'entrée REST, et d'autres utilitaires pour simplifier le développement web dans l'écosystème Spring. En résumé, la dépendance Spring Web facilite la création d'applications web robustes en utilisant le modèle de programmation proposé par Spring pour la gestion des requêtes et des réponses HTTP.
 
-**Spring Data JPA :**
+**Spring Data JPA**
   > * Persist data in SQL stores with Java Persistence API using Spring Data and Hibernate.
   > * La dépendance Spring Data JPA facilite l'intégration de la technologie Java Persistence API (JPA) dans les applications Spring. JPA est une spécification Java qui permet de mapper des objets Java vers des bases de données relationnelles. Voici comment la dépendance Spring Data JPA est généralement utilisée :
   >   * Mapping Objet-Relationnel (ORM) évitant la nécessité de requêtes SQL manuelles.
@@ -44,23 +44,30 @@
   >   * Internationalisation
   >   * Prévisualisation dans le navigateur
 
-## Etape 13:
+## Étape 13
 
-  1. Nous avons défini des paramètres au niveau des requetes HTTP avec `@RequestParam`
-  2. Lorsqu'on utilise la commande `return "greeting"` - où "greeting" est le nom du fichier HTML, Spring est chargé de vérifier s'il y a un page avec ce nom.
-  3. Dans le page `greeting.html` on a un attribut `${nomTemplate}`. Au niveau de contrôleur, `nomTemplate` est créé en utilisant le modèle qui prend en argument `nameGET`. Donc, lorsqu'on saisi dans URL `localhost:9090/greeting` on a un affichage suivant: `Bonjour World !` parce que le valeur par défaut de nameGET est `World`. Mais si on accede au URL `localhost:9090/greeting?nameGET=Test` on a bien l'affichage `Bonjour Test !` comme on a défini le variable `nameGET` à chaine de caractères `Test`.
+1. Nous avons défini des paramètres au niveau des requêtes HTTP avec `@RequestParam`
+2. Lorsqu'on utilise la commande `return "greeting"` - où "greeting" est le nom du fichier HTML, Spring est chargé de vérifier s'il y a un page avec ce nom.
+3. Dans le page `greeting.html` on a un attribut `${nomTemplate}`. Au niveau de contrôleur, `nomTemplate` est créé en utilisant le modèle qui prend en argument `nameGET`. Donc, lorsqu'on a saisi dans URL `localhost:9090/greeting` on a un affichage suivant : `Bonjour World !` parce que la valeur par défaut de nameGET est `World`. Mais si on accede au URL `localhost:9090/greeting?nameGET=Test` on a bien l'affichage `Bonjour Test !` comme on a défini le variable `nameGET` à chaine de caractères `Test`.
 
-## Etape 17:
+## Étape 17
 
-L'apparition de la nouvelle table.
+On a l'apparition de la nouvelle table `Address` avec les attributs `id`, `creation`, `content` et `author`.
 
-## Etape 18 :
+## Étape 18
 
+Une entité représente une table dans la base de données. Lorsqu'on a créé une classe `Address` et a mis une annotation `@Entity`, on a défini la table Address avec la clé primaire automatiquement générée grâce à `@id` et `@GeneratedValue`.
 
+## Étape 20
 
-## Etape 20 :
+On voit bien tout le contenu de data.sql avec la requête `SELECT * FROM ADDRESS` :
+```
+ID  CONTENT                                 CREATION  
+1   57 boulevard demorieux                  2023-12-04 13:00:16.858612
+2   51 allee du gamay, 34080 montpellier    2023-12-04 13:00:16.860615
+```
 
-## Etape 22 :
+## Étape 22
 
 L'annotation @Autowired dans Spring est utilisée pour effectuer l'injection de dépendances automatique. Elle permet au conteneur Spring de résoudre automatiquement et d'injecter les dépendances nécessaires à un composant. Voici comment elle fonctionne :
 
@@ -72,14 +79,10 @@ L'annotation @Autowired dans Spring est utilisée pour effectuer l'injection de 
 
 Constructeur, Setter, ou Méthode : L'annotation @Autowired peut être utilisée au niveau du constructeur, des méthodes ou des setters.
 
-@Autowired
-
-* Setter :
-
-* Méthode :
-
 L'utilisation de @Autowired simplifie le code en évitant la nécessité d'instancier manuellement les dépendances. Cela favorise une approche plus modulaire et facilite la gestion des dépendances dans les applications Spring.
 
-## Etape 30:
+## Étape 30
+
+
 
 # TP 4

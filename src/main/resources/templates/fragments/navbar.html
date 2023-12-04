@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NavBar</title>
+    <style>
+        a {
+            color: rgba(0, 124, 196, 1);
+            text-decoration: none;
+            margin-right: 30px;
+        }
+    </style>
+</head>
+<body th:fragment="navbarFragment">
+    <nav>
+        <a th:href="@{/greeting}">Greeting</a>
+        <a th:href="@{/adresses}">Adresses</a>
+        <a th:href="@{/database}">H2-Console</a>
+        <a th:href="@{/adresse}">Adresse</a>
+    </nav>
+</body>
+</html>
