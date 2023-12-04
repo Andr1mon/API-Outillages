@@ -83,6 +83,10 @@ L'utilisation de @Autowired simplifie le code en évitant la nécessité d'insta
 
 ## Étape 30
 
+Pour ajouter Bootstrap à notre projet, il suffit d'insérer à la balise head de la page html la ligne suivante :
+
+`<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">`
+`<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">`
 
 
 # TP 4
