@@ -45,9 +45,9 @@ public class MeteoController {
 
         // Token d'abonnement MeteoConcept
         String API_KEY = "01017853a5496c2d9f80af28b11d821e622add92328bebda41b3787cca00c6fc";
-
-        //String meteo_url = "https://api.meteo-concept.com/api/forecast/daily?token=" + API_KEY + "&"+ latitude + "," + longitude;
-        String meteo_url = "https://api.meteo-concept.com/api/forecast/daily?token=" + API_KEY + "&insee="+ etalabAPIResponse.features.get(0).properties.citycode;
+        System.out.println("https://api.meteo-concept.com/api/forecast/daily?token=" + API_KEY + "&latlng="+ etalabAPIResponse.features.get(0).geometry.coordinates[1] + "," + etalabAPIResponse.features.get(0).geometry.coordinates[0]);
+        String meteo_url = "https://api.meteo-concept.com/api/forecast/daily?token=" + API_KEY + "&latlng="+ etalabAPIResponse.features.get(0).geometry.coordinates[1] + "," + etalabAPIResponse.features.get(0).geometry.coordinates[0];
+        //String meteo_url = "https://api.meteo-concept.com/api/forecast/daily?token=" + API_KEY + "&insee="+ etalabAPIResponse.features.get(0).properties.citycode;
 
         ResponseEntity<MeteoConceptAPIResponse> response = rt.exchange(meteo_url, HttpMethod.GET, requestEntity, MeteoConceptAPIResponse.class);
 
