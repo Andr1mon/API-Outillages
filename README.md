@@ -69,7 +69,7 @@ ID  CONTENT                                 CREATION
 
 ## Étape 22
 
-L'annotation @Autowired dans Spring est utilisée pour effectuer l'injection de dépendances automatique. Elle permet au conteneur Spring de résoudre automatiquement et d'injecter les dépendances nécessaires à un composant. Voici comment elle fonctionne :
+L'annotation @Autowired dans Spring est utilisée pour effectuer l'injection de dépendances automatiques. Elle permet au conteneur Spring de résoudre automatiquement et d'injecter les dépendances nécessaires à un composant. Voici comment elle fonctionne :
 
 * Injection de Dépendances : Lorsqu'un composant (par exemple, un bean) nécessite une dépendance vers un autre composant, nous pouvons utiliser l'annotation @Autowired pour demander au conteneur Spring de fournir automatiquement la référence de la dépendance.
 
@@ -95,32 +95,32 @@ Ensuite, on peut utiliser la fonctionnalité de Bootstrap.
 
 **Faut-il une clé API pour appeler MeteoConcept ?**
 
-> Oui, pour pouvoir utiliser API MeteoConcept, il faut avoir une clé.
+> Pour pouvoir utiliser API MeteoConcept, il faut avoir une clé.
 
 **Quelle URL appeler ?**
 
->https://api.meteo-concept.com/api/forecast/daily
-> pour recevoir l'information par rapport au prevision du meteo sur la semaine. A la fin d'URL il faut saisir une cle API et code postale ou latitude avec longitude.
+> https://api.meteo-concept.com/api/forecast/daily
+> pour recevoir l'information par rapport à la prévision de la météo sur la semaine. À la fin d'URL, il faut saisir une clé API et code postal ou latitude et longitude.
 
 **Quelle méthode HTTP utiliser ?**
 
->On utilise un methode GET pour recuperer l'information a partir d'API.
+> On utilise une méthode GET pour récupérer l'information à partir d'API.
 
 **Comment passer les paramètres d'appels ?**
 
->On passe les parametres d'appels dans URL : A la fin d'URL il faut saisir une cle API et code postale ou latitude avec longitude.
+> On passe les paramètres d'appels dans URL : À la fin d'URL, il faut saisir une clé API et code postal ou latitude et longitude.
 
 **Où est l'information dont j'ai besoin dans la réponse ?**
 
->L'information necessaire se retrouve sur le contenu de la page en donnees de JSON.
+> L'information nécessaire se retrouve sur le contenu de la page en données de JSON.
 
 **Pour afficher la température du lieu visé par les coordonnées GPS ?**
 
->
+> Pour afficher la température du lieu, on récupère la totalité d'information concernant le lieu vise et dans la réponse de API, on a l'objet forecast - liste pour chaque jour qui a tmin et tmax - les températures du maximum et du minimum de la journée de la semaine.
 
 **Pour afficher la prévision de météo du lieu visé par les coordonnées GPS ?**
 
->
+> Tout est fait à partir du lien https://api.meteo-concept.com/api/forecast/daily ou on récupère la prévision par coordonnées GPS pour chaque jour de la semaine.
 
 ## Étape 7
 
