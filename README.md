@@ -95,23 +95,24 @@ Ensuite, on peut utiliser la fonctionnalité de Bootstrap.
 
 **Faut-il une clé API pour appeler MeteoConcept ?**
 
-> 
+> Oui, pour pouvoir utiliser API MeteoConcept, il faut avoir une clé.
 
 **Quelle URL appeler ?**
 
->
+>https://api.meteo-concept.com/api/forecast/daily
+> pour recevoir l'information par rapport au prevision du meteo sur la semaine. A la fin d'URL il faut saisir une cle API et code postale ou latitude avec longitude.
 
 **Quelle méthode HTTP utiliser ?**
 
->
+>On utilise un methode GET pour recuperer l'information a partir d'API.
 
 **Comment passer les paramètres d'appels ?**
 
->
+>On passe les parametres d'appels dans URL : A la fin d'URL il faut saisir une cle API et code postale ou latitude avec longitude.
 
 **Où est l'information dont j'ai besoin dans la réponse ?**
 
->
+>L'information necessaire se retrouve sur le contenu de la page en donnees de JSON.
 
 **Pour afficher la température du lieu visé par les coordonnées GPS ?**
 
