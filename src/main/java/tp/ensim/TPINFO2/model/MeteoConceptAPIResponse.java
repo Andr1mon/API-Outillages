@@ -3,10 +3,10 @@ package tp.ensim.TPINFO2.model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MeteoResponse {
+public class MeteoConceptAPIResponse {
     public City city;
     public String update;
-    public List<Forecast> Forecasts = new ArrayList<>();
+    public List<Forecast> forecast = new ArrayList<>();
 
     public City getCity() {
         return city;
@@ -24,11 +24,11 @@ public class MeteoResponse {
         this.update = update;
     }
 
-    public List<Forecast> getForecasts() {
-        return Forecasts;
+    public List<Forecast> getForecast() {
+        return forecast;
     }
 
-    public void setForecasts(List<Forecast> forecasts) {
-        Forecasts = forecasts;
+    public void setForecast(List<Forecast> forecast) {
+        this.forecast = forecast;
     }
 }

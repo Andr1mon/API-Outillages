@@ -8,5 +8,10 @@
 </head>
 <body>
     <nav th:replace="fragments/navbar :: navbarFragment"></nav>
+    <ul th:each="forecast:${allForecasts}">
+        <li th:text="'La temperature maximale : ' + ${forecast.tmax} +
+                     ' La temperature minimale : ' + ${forecast.tmin} +
+                     ' Date : ' + ${forecast.datetime} + ' City : ' + ${city.name}"/>
+    </ul>
 </body>
 </html>
