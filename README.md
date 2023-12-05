@@ -90,3 +90,33 @@ Pour ajouter Bootstrap à notre projet, il suffit d'insérer à la balise head d
 Ensuite, on peut utiliser la fonctionnalité de Bootstrap.
 
 # TP 4
+
+## Étape 6
+
+**Faut-il une clé API pour appeler MeteoConcept ?**
+
+> 
+
+**Quelle URL appeler ?**
+
+>
+
+**Quelle méthode HTTP utiliser ?**
+
+>
+
+**Comment passer les paramètres d'appels ?**
+
+>
+
+**Où est l'information dont j'ai besoin dans la réponse ?**
+
+>
+
+**Pour afficher la température du lieu visé par les coordonnées GPS ?**
+
+>
+
+**Pour afficher la prévision de météo du lieu visé par les coordonnées GPS ?**
+
+>
