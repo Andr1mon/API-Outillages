@@ -28,9 +28,9 @@ public class MeteoController {
 
         EtalabAPIResponse etalabAPIResponse = rt.getForObject("https://api-adresse.data.gouv.fr/search/?q="+address, EtalabAPIResponse.class);
         double latitude, longitude;
-        latitude = etalabAPIResponse.getFeatures().get(0).getGeometry().getLatitude();
-        longitude = etalabAPIResponse.getFeatures().get(0).getGeometry().getLongitude();
-        String insee = etalabAPIResponse.getFeatures().get(0).getProperties().getCitycode();
+        latitude = etalabAPIResponse.features.get(0).geometry.latitude;
+        longitude = etalabAPIResponse.features.get(0).geometry.longitude;
+        String insee = etalabAPIResponse.features.get(0).properties.citycode;
 
         // Etape 4 : Test de recuperation des donnees a partir d'etalab API
         /*
@@ -56,8 +56,8 @@ public class MeteoController {
         ResponseEntity<MeteoConceptAPIResponse> response = rt.exchange(meteo_url, HttpMethod.GET, requestEntity, MeteoConceptAPIResponse.class);
 
         // Passage Model-View1
-        model.addAttribute("city", response.getBody().getCity());
-        model.addAttribute("allForecasts", response.getBody().getForecast());
+        model.addAttribute("city", response.getBody().city);
+        model.addAttribute("allForecasts", response.getBody().forecast);
         return "meteo";
     }
 }
