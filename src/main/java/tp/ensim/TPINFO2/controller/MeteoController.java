@@ -41,7 +41,7 @@ public class MeteoController {
         // API météo
         HttpHeaders headers = new HttpHeaders();
         headers.setAccept(Collections.singletonList(MediaType.APPLICATION_JSON));
-        HttpEntity<String> requestEntity = new HttpEntity<String>(headers);
+        HttpEntity<String> requestEntity = new HttpEntity<>(headers);
 
         // Token d'abonnement MeteoConcept
         String API_KEY = "01017853a5496c2d9f80af28b11d821e622add92328bebda41b3787cca00c6fc";
