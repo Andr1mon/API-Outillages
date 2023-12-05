@@ -26,11 +26,7 @@ public class MeteoController {
     public String meteoPost(@RequestParam(name = "address") String address, Model model) {
         String query = address.toLowerCase().replace(" ", "+");
 
-        EtalabAPIResponse etalabAPIResponse = rt.getForObject("https://api-adresse.data.gouv.fr/search/?q="+address, EtalabAPIResponse.class);
-        double latitude, longitude;
-        latitude = etalabAPIResponse.features.get(0).geometry.latitude;
-        longitude = etalabAPIResponse.features.get(0).geometry.longitude;
-        String insee = etalabAPIResponse.features.get(0).properties.citycode;
+        EtalabAPIResponse etalabAPIResponse = rt.getForObject("https://api-adresse.data.gouv.fr/search/?q="+query, EtalabAPIResponse.class);
 
         // Etape 4 : Test de recuperation des donnees a partir d'etalab API
         /*
@@ -51,7 +47,7 @@ public class MeteoController {
         String API_KEY = "01017853a5496c2d9f80af28b11d821e622add92328bebda41b3787cca00c6fc";
 
         //String meteo_url = "https://api.meteo-concept.com/api/forecast/daily?token=" + API_KEY + "&"+ latitude + "," + longitude;
-        String meteo_url = "https://api.meteo-concept.com/api/forecast/daily?token=" + API_KEY + "&insee="+ insee;
+        String meteo_url = "https://api.meteo-concept.com/api/forecast/daily?token=" + API_KEY + "&insee="+ etalabAPIResponse.features.get(0).properties.citycode;
 
         ResponseEntity<MeteoConceptAPIResponse> response = rt.exchange(meteo_url, HttpMethod.GET, requestEntity, MeteoConceptAPIResponse.class);
 
