@@ -119,7 +119,3 @@ Ensuite, on peut utiliser la fonctionnalité de Bootstrap.
 **Pour afficher la prévision de météo du lieu visé par les coordonnées GPS ?**
 
 > Tout est fait à partir du lien https://api.meteo-concept.com/api/forecast/daily ou on récupère la prévision par coordonnées GPS pour chaque jour de la semaine.
-
-## Étape 7
-
-### Lien vers le projet GitHub: https://github.com/Andr1mon/TP-INFO2
