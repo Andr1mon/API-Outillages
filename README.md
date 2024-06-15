@@ -1,5 +1,3 @@
-### Lien vers le projet GitHub: https://github.com/Andr1mon/TP-INFO2
-
 # TP 3
 
 ## Étape 5
